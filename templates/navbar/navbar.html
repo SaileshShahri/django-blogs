@@ -1,0 +1,29 @@
+<style>
+.a2 {
+  background-color: #eb0000;
+  color: white; 
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] { 
+  width: 100%;
+  padding: 6px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  font-size: 14px;
+}
+</style>
+
+
+<div class="w3-bar a2">
+  <a href="{% url 'home' %}" class="w3-bar-item w3-center w3-padding" style="width: 15%; height: 100%;">Blog</a>
+  <a href="{% url 'accountprofile' %}" class="w3-bar-item w3-right"><i class="material-icons">account_circle</i></a>
+</div>
+

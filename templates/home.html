@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block base %}
+
+<div class="w3-row-padding w3-container" style="max-width: 800px; margin:auto;">
+{% for abc in obj %}
+
+<a href="{{ abc.get_absolute_url }}">
+<div style="border: 1px solid black; height: 80px; margin: 5px;" class="w3-round w3-col s12"> 
+  <div class="w3-container">
+      <h3>{{ abc.title }}</h3><br>
+      {{ abc.user.name }}<br>
+    </div>
+
+</div>
+</a>
+{% endfor %}
+</div>
+
+
+
+{% endblock %}
