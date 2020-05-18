@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block base %}
+
+<div style="max-width: 800px; margin: auto;">
+<h3>{{ obj.title }}</h3>
+<small class="w3-opacity">{{ obj.timestamp }}</small>
+<p>{{ obj.desc }}</p>
+<p class="w3-opacity">{{ obj.tags }}</p>
+</div>
+
+{% endblock %}
